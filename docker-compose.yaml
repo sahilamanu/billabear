@@ -58,7 +58,7 @@ services:
     depends_on: [php]
     volumes:
       - app:/var/www:ro
-      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro 
+      - ./docker/nginx/billabear.conf:/etc/nginx/conf.d/billabear.conf:ro 
     networks: [billabear]
     # ⚠ No "ports:" block — Coolify’s Traefik handles public 80/443.
 
